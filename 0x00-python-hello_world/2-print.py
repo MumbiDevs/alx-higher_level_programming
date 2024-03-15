@@ -1,3 +1,3 @@
 #!/usr/bin/env python3
-
-print(""Programming is like building a multilingual puzzle")
+"""Prints a specific string."""
+print("Programming is like building a multilingual puzzle")
