@@ -1,15 +1,7 @@
 import urllib.request
 
-def fetch_status():
-  """Fetches the status from the provided URL and displays it in the desired format."""
-  url = "https://alx-intranet.hbtn.io/status"
-  with urllib.request.urlopen(url) as response:
-    body = response.read()
-  
-  print("Body response:")
-  print(f"\t- type: {type(body)}")
-  print(f"\t- content: {body}")
-  print(f"\t- utf8 content: {body.decode('utf-8')}")
+req = urllib.request.Request('https://alx-intranet.hbtn.io/status')
+with urllib.request.urlopen(req) as response:
+  the_page - response.read()
 
-if __name__ == "__main__":
-  fetch_status()
+
