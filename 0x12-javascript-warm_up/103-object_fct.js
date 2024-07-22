@@ -10,6 +10,10 @@ const myObject = {
 
 console.log(myObject);
 
+myObject.incr = function () { // Redefine incr as an anonymous function
+  this.value++;
+};
+
 myObject.incr();
 console.log(myObject);
 
